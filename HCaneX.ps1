@@ -6,7 +6,7 @@ $ErrorActionPreference = 'Continue'
 
 # ---------- Elevation ----------
 # If you host this file, put its raw URL here so "irm | iex" can re-launch itself as Admin.
-$ScriptUrl = 'https://raw.githubusercontent.com/mooastun13-stack/HCane-X-V2.0/main/HCaneX.ps1'
+$ScriptUrl = https://raw.githubusercontent.com/mooastun13-stack/HCane-X-V2.0/main/HCaneX.ps1
 
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 if (-not $isAdmin) {
